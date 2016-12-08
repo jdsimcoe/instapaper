@@ -1,0 +1,13 @@
+html {
+	overflow: hidden;
+}
+
+/* bind the toolbar as the window's draggable region */
+#header {
+	-webkit-app-region: drag;
+  padding-left: 80px !important;
+}
+
+#header .header-btn {
+  cursor: pointer !important;
+}

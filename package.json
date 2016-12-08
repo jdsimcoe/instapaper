@@ -1,0 +1,37 @@
+{
+  "name": "instapaper",
+  "productName": "Instapaper",
+  "version": "1.0.0",
+  "description": "Unofficial Instapaper app on Electron",
+  "license": "MIT",
+  "repository": "jdsimcoe/instapaper",
+  "author": {
+    "name": "Jonathan Simcoe",
+    "url": "jdsimcoe@gmail.com"
+  },
+  "scripts": {
+    "test": "xo",
+    "start": "electron .",
+    "build": "npm run build:macos && npm run build:linux && npm run build:windows",
+    "build:macos": "electron-packager . --overwrite --asar --out=dist --ignore='^media$' --prune --platform=darwin --arch=x64 --icon=static/Icon.icns --app-bundle-id=com.sindresorhus.caprine --sign='Developer ID Application: Sindre Sorhus (YG56YK5RN5)' --app-version=$npm_package_version && cd dist/Instapaper-darwin-x64 && zip -ryXq9 ../Instapaper-osx-${npm_package_version}.zip Instapaper.app"
+  },
+  "dependencies": {
+    "electron-config": "^0.2.1",
+    "electron-context-menu": "^0.6.0",
+    "electron-debug": "^1.0.0",
+    "electron-dl": "^1.0.0",
+    "minimist": "^1.2.0"
+  },
+  "devDependencies": {
+    "electron": "^1.4.10",
+    "electron-packager": "^8.0.0",
+    "xo": "*"
+  },
+  "xo": {
+    "esnext": true,
+    "envs": [
+      "node",
+      "browser"
+    ]
+  }
+}
