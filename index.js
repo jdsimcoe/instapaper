@@ -62,7 +62,7 @@ function createMainWindow() {
 		minWidth: 400,
 		minHeight: 200,
 		alwaysOnTop: config.get('alwaysOnTop'),
-		titleBarStyle: 'hidden-inset',
+		titleBarStyle: 'hidden',
 		autoHideMenuBar: true,
 		backgroundColor: '#fff',
 		webPreferences: {

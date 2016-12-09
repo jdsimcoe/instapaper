@@ -1,13 +1,18 @@
-html {
-	overflow: hidden;
-}
-
 /* bind the toolbar as the window's draggable region */
-#header {
+.page_header {
 	-webkit-app-region: drag;
-  padding-left: 80px !important;
 }
 
-#header .header-btn {
-  cursor: pointer !important;
+.page_header_mobile .mobile_menu_button {
+  top: 5px;
+}
+
+.footer_master {
+  display: inline !important;
+}
+
+@media (max-width: 767px) {
+  .footer_master {
+    display: none !important;
+  }
 }

@@ -1,7 +1,7 @@
 {
   "name": "instapaper",
   "productName": "Instapaper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Unofficial Instapaper app on Electron",
   "license": "MIT",
   "repository": "jdsimcoe/instapaper",
