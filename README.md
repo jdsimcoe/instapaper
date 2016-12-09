@@ -1,4 +1,6 @@
-# Instapaper <img src="static/Icon.png" width="60">
+<img src="static/Icon.png" width="96">
+
+# Instapaper
 
 > Unofficial Instapaper app on Electron
 
