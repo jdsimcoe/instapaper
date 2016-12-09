@@ -1,4 +1,4 @@
-<img src="static/Icon.png" width="96">
+<img src="static/Icon.png" width="96" />
 
 # Instapaper
 
